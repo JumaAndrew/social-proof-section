@@ -1,0 +1,32 @@
+:root {
+  --color-primary-bg: hsl(0, 0%, 100%);
+  --color-secondary-bg: hsl(290, 30%, 96%);
+  --color-primary-text: hsl(300, 43%, 22%);
+  --color-secondary-text: hsl(308, 43%, 93%);
+  --color-tertiary-text: hsl(303, 10%, 53%);
+  --color-other-text: hsl(333, 80%, 67%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 772px) {
+    font-size: 50%;
+  }
+
+  @media (max-width: 470px) {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+}

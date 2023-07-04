@@ -1,0 +1,183 @@
+.hero {
+  max-width: 80%;
+}
+
+.hero-heading {
+  font-size: 4.8rem;
+  color: var(--color-primary-text);
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.hero-text {
+  font-size: 1.6rem;
+  color: var(--color-tertiary-text);
+  line-height: 1.8rem;
+}
+
+.ratings {
+  margin-top: 3rem;
+}
+
+.rating {
+  max-width: 75%;
+  display: flex;
+  gap: 2.4rem;
+  background-color: var(--color-secondary-bg);
+  padding: 1.5rem 0 1.5rem 2rem;
+  margin-bottom: 1.4rem;
+  border-radius: 7px;
+
+  &:nth-child(2) {
+    margin-left: 3rem;
+  }
+
+  &:nth-child(3) {
+    margin-left: 6rem;
+  }
+
+  &-svg {
+    img {
+      width: 1.3rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary-text);
+    align-self: center;
+  }
+}
+
+.testimonials {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 4rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary-text);
+  padding: 3rem 2.5rem;
+  border-radius: 10px;
+  flex: 1;
+
+  &:nth-child(2) {
+    transform: translateY(10%);
+  }
+
+  &:nth-child(3) {
+    transform: translateY(20%);
+  }
+
+  &_header {
+    display: flex;
+    gap: 1.5rem;
+
+    &--img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    &-heading {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      justify-content: center;
+
+      &--username {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-primary-bg);
+      }
+
+      &--description {
+        font-size: 1.4rem;
+        color: var(--color-other-text);
+      }
+    }
+  }
+
+  &_text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-secondary-text);
+    line-height: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .rating {
+    gap: 1rem;
+
+    &-svg {
+      img {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .hero {
+    max-width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
+  }
+
+  .rating {
+    max-width: 100%;
+
+    &:nth-child(2) {
+      margin-left: 0;
+    }
+
+    &:nth-child(3) {
+      margin-left: 0;
+    }
+  }
+
+  .testimonials {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .hero {
+    max-width: 100%;
+
+    &-heading,
+    &-text {
+      text-align: center;
+    }
+
+    &-heading {
+      line-height: 3.5rem;
+      //   margin-bottom: 3rem;
+    }
+  }
+
+  .ratings {
+    margin-top: 0;
+  }
+
+  .rating {
+    flex-direction: column;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+
+    &-svg {
+      text-align: center;
+    }
+  }
+
+  .testimonials {
+    display: block;
+  }
+}
