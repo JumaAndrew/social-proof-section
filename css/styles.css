@@ -73,14 +73,14 @@ body {
   max-width: 80%;
 }
 
-.hero-heading {
+.hero__heading {
   font-size: 4.8rem;
   color: var(--color-primary-text);
   line-height: 4rem;
   margin-bottom: 2rem;
 }
 
-.hero-text {
+.hero__text {
   font-size: 1.6rem;
   color: var(--color-tertiary-text);
   line-height: 1.8rem;
@@ -105,11 +105,11 @@ body {
 .rating:nth-child(3) {
   margin-left: 6rem;
 }
-.rating-svg img {
+.rating__svg img {
   width: 1.3rem;
   margin-right: 0.5rem;
 }
-.rating-text {
+.rating__text {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--color-primary-text);
@@ -136,27 +136,27 @@ body {
 .testimonial:nth-child(3) {
   transform: translateY(20%);
 }
-.testimonial_header {
+.testimonial__header {
   display: flex;
   gap: 1.5rem;
 }
-.testimonial_header--img {
+.testimonial__header--img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.testimonial_header-heading {
+.testimonial__header-heading {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
   justify-content: center;
 }
-.testimonial_header-heading--username {
+.testimonial__header-heading--username {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-primary-bg);
 }
-.testimonial_header-heading--description {
+.testimonial__header-heading--description {
   font-size: 1.4rem;
   color: var(--color-other-text);
 }
@@ -172,7 +172,7 @@ body {
   .rating {
     gap: 1rem;
   }
-  .rating-svg img {
+  .rating__svg img {
     margin: 0;
   }
 }
@@ -180,7 +180,7 @@ body {
   .hero {
     max-width: 100%;
   }
-  .hero-heading {
+  .hero__heading {
     font-size: 4rem;
   }
   .rating {
@@ -200,10 +200,10 @@ body {
   .hero {
     max-width: 100%;
   }
-  .hero-heading, .hero-text {
+  .hero__heading, .hero__text {
     text-align: center;
   }
-  .hero-heading {
+  .hero__heading {
     line-height: 3.5rem;
   }
   .ratings {
@@ -213,7 +213,7 @@ body {
     flex-direction: column;
     padding: 1.5rem 2rem 1.5rem 2rem;
   }
-  .rating-svg {
+  .rating__svg {
     text-align: center;
   }
   .testimonials {
